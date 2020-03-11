@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+    <div class="cloud cloud1" id="cloud1-back"></div>
+    <div class="cloud cloud1" id="cloud1-mid"></div>
+    <div class="cloud cloud1" id="cloud1-front"></div>
+    <div class="cloud cloud2" id="cloud2-back"></div>
+    <div class="cloud cloud2" id="cloud2-mid"></div>
+    <div class="cloud cloud2" id="cloud2-front"></div>
+    <div class="cloud cloud3" id="cloud3-back"></div>
+    <div class="cloud cloud3" id="cloud3-mid"></div>
+    <div class="cloud cloud3" id="cloud3-front"></div>
+    <div class="cloud cloud4" id="cloud4-back"></div>
+    <div class="cloud cloud4" id="cloud4-mid"></div>
+    <div class="cloud cloud4" id="cloud4-front"></div>
+
+    <svg width="0" height="0">
+        <filter id="filter-back">
+            <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" seed="0" />
+            <feDisplacementMap in="SourceGraphic" scale="170" />
+        </filter>
+        <filter id="filter-mid">
+            <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="0" />
+            <feDisplacementMap in="SourceGraphic" scale="150" />
+        </filter>
+        <filter id="filter-front">
+            <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="0" />
+            <feDisplacementMap in="SourceGraphic" scale="100" />
+        </filter>
+    </svg>
+</body>
+<link rel="stylesheet" href="./clouds1.css">
+
+</html>
